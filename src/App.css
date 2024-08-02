@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+.container {
+  width: 350px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+.input-container {
+  display: flex;
+  background-color: #e9dcf6;
+  border-radius: 15px;
+  padding: 0 8px 0 5px;
+  margin-bottom: 20px;
+
+}
+
+.cityinput {
+  flex: 1;
+  background-color: #e9dcf6;
+  border-radius: 15px;
+  border: none;
+  padding: 7px 10px;
+  outline: none;
+}
+
+.cityinput:hover {
+  border: none;
+}
+
+.search-icon {
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+.search-icon img {
+  width: 20px;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.search-icon img:hover {
+  transform: scale(1.3);
+}
+
+.image,
+.temp,
+.city,
+.country {
+  text-align: center;
+}
+
+.image img {
+  width: 150px;
+  height: 150px;
+}
+
+.temp {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.city {
+  font-size: 20px;
+  font-weight: 500;
+  color: darkorange;
+}
+
+.country {
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.cord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.cord div span:nth-child(2) {
+  display: flex;
+  font-size: 14px;
+}
+
+.cord div span:nth-child(1) {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.dataContainer img {
+  width: 50px;
+  height: 50px;
+}
+
+.dataContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.dataContainer div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.dataContainer div span:nth-child(3) {
+  font-size: 14px;
+}
+
+.dataContainer div span:nth-child(2) {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.alert {
+  text-align: center;
+  color: gray;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 500;
+}
