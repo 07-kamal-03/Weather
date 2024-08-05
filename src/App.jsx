@@ -139,7 +139,8 @@ function App() {
           </div>
         </div>
         {!loading && !cityNotFound && <WeatherDetails weatherIcon={icon} temp={temp} city={city} country={country} longitude={longitude} latitude={latitude} humidity={humidity} wind={wind} />}
-        {loading && <div className='loading alert'>Loading...</div>}
+        {loading && <div className='loading alert'>
+        <div className='box'></div>Loading...</div>}
         {error && <div className='error alert'>{error}</div>}
         {!loading && cityNotFound && <div className='city-not-found alert'>City not found</div>}
       </div>

@@ -141,3 +141,24 @@ body {
   margin-top: 20px;
   font-weight: 500;
 }
+.box {
+  border: 4px solid rgb(185, 185, 185);
+  border-top: 4px solid rgb(109, 110, 110);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 155px;
+  margin-bottom: 5px;
+  transition-property: transform;
+  animation: rotate 2s infinite linear;
+  
+}
+
+@keyframes rotate {
+      from {
+          transform: rotate(0deg);
+      }
+      to {
+          transform: rotate(360deg); 
+      }
+}
